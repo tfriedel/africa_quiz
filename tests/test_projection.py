@@ -3,7 +3,7 @@
 import json
 
 
-def test_coordinate_projector_can_be_created():
+def test_coordinate_projector_can_be_created() -> None:
     """Test that CoordinateProjector can be instantiated."""
     from africa_quiz.projection import CoordinateProjector
 
@@ -13,7 +13,7 @@ def test_coordinate_projector_can_be_created():
     assert projector is not None
 
 
-def test_coordinate_projector_converts_geo_to_canvas():
+def test_coordinate_projector_converts_geo_to_canvas() -> None:
     """Test that geographic coordinates can be converted to canvas coordinates."""
     from africa_quiz.projection import CoordinateProjector
 
@@ -26,7 +26,7 @@ def test_coordinate_projector_converts_geo_to_canvas():
     assert y == 0
 
 
-def test_calculate_bbox_from_africa_geojson():
+def test_calculate_bbox_from_africa_geojson() -> None:
     """Test that bounding box calculation works with actual Africa GeoJSON data."""
     from africa_quiz.projection import CoordinateProjector
 
@@ -43,7 +43,7 @@ def test_calculate_bbox_from_africa_geojson():
     assert max_lat > 30  # Northern edge around Egypt
 
 
-def test_calculate_bbox_with_simple_geojson():
+def test_calculate_bbox_with_simple_geojson() -> None:
     """Test bounding box calculation with a simple test case."""
     from africa_quiz.projection import CoordinateProjector
 
@@ -69,7 +69,7 @@ def test_calculate_bbox_with_simple_geojson():
     assert max_lat == 10.0
 
 
-def test_calculate_bbox_with_multipolygon():
+def test_calculate_bbox_with_multipolygon() -> None:
     """Test bounding box calculation with MultiPolygon geometry."""
     from africa_quiz.projection import CoordinateProjector
 
@@ -96,7 +96,7 @@ def test_calculate_bbox_with_multipolygon():
     assert max_lat == 15.0
 
 
-def test_coordinate_projector_reverse_conversion():
+def test_coordinate_projector_reverse_conversion() -> None:
     """Test that canvas coordinates can be converted back to geographic coordinates."""
     from africa_quiz.projection import CoordinateProjector
 

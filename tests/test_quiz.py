@@ -1,7 +1,7 @@
 """Tests for quiz management functionality."""
 
 
-def test_quiz_manager_can_be_created():
+def test_quiz_manager_can_be_created() -> None:
     """Test that QuizManager can be instantiated."""
     from africa_quiz.projection import CoordinateProjector
     from africa_quiz.quiz import QuizManager
@@ -13,7 +13,7 @@ def test_quiz_manager_can_be_created():
     assert quiz_manager is not None
 
 
-def test_quiz_manager_loads_countries_and_provides_current():
+def test_quiz_manager_loads_countries_and_provides_current() -> None:
     """Test that QuizManager loads countries and provides current country to guess."""
     from africa_quiz.projection import CoordinateProjector
     from africa_quiz.quiz import QuizManager
@@ -29,7 +29,7 @@ def test_quiz_manager_loads_countries_and_provides_current():
     assert len(current_country) > 0
 
 
-def test_quiz_manager_loads_actual_african_countries():
+def test_quiz_manager_loads_actual_african_countries() -> None:
     """Test that QuizManager loads actual countries from the africa.geojson file."""
     from africa_quiz.projection import CoordinateProjector
     from africa_quiz.quiz import QuizManager
@@ -58,7 +58,7 @@ def test_quiz_manager_loads_actual_african_countries():
     assert len(all_loaded_countries.intersection(expected_countries)) >= 3
 
 
-def test_quiz_manager_handles_click():
+def test_quiz_manager_handles_click() -> None:
     """Test that QuizManager can handle click coordinates and determine correctness."""
     from africa_quiz.projection import CoordinateProjector
     from africa_quiz.quiz import QuizManager
@@ -74,7 +74,7 @@ def test_quiz_manager_handles_click():
     assert isinstance(clicked_country, str) or clicked_country is None
 
 
-def test_quiz_manager_hit_detection_with_centroids():
+def test_quiz_manager_hit_detection_with_centroids() -> None:
     """Test hit detection using shapely centroids for reliable geometric testing."""
     import json
 
@@ -114,7 +114,7 @@ def test_quiz_manager_hit_detection_with_centroids():
     assert isinstance(is_correct, bool)
 
 
-def test_quiz_manager_detects_multiple_countries():
+def test_quiz_manager_detects_multiple_countries() -> None:
     """Test that hit detection works for multiple different countries."""
     import json
 
@@ -148,7 +148,7 @@ def test_quiz_manager_detects_multiple_countries():
         canvas_x, canvas_y = projector.geo_to_canvas(centroid.x, centroid.y)
 
         # Click on the centroid should detect this country
-        is_correct, clicked_country = quiz_manager.handle_click(canvas_x, canvas_y)
+        _is_correct, clicked_country = quiz_manager.handle_click(canvas_x, canvas_y)
 
         detected_countries.add(clicked_country)
         assert clicked_country == country_name
@@ -157,7 +157,7 @@ def test_quiz_manager_detects_multiple_countries():
     assert len(detected_countries) == 3
 
 
-def test_quiz_manager_round_completion():
+def test_quiz_manager_round_completion() -> None:
     """Test that QuizManager can detect when a round is complete."""
     from africa_quiz.projection import CoordinateProjector
     from africa_quiz.quiz import QuizManager

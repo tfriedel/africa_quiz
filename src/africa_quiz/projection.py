@@ -1,7 +1,5 @@
 """Coordinate projection module for Africa Geography Quiz Game."""
 
-from typing import Tuple
-
 
 class CoordinateProjector:
     """Projects geographic coordinates to canvas coordinates using equirectangular projection."""
@@ -41,12 +39,21 @@ class CoordinateProjector:
         return (x, y)
 
     def canvas_to_geo(self, x: int, y: int) -> tuple[float, float]:
+        """Convert canvas pixel coordinates back to geographic coordinates.
+
+        Args:
+            x: Canvas x coordinate in pixels
+            y: Canvas y coordinate in pixels
+
+        Returns:
+            Tuple of (longitude, latitude) in degrees
+        """
         lon = (x / self.x_scale) + self.min_lon
         lat = self.max_lat - (y / self.y_scale)  # Flip Y axis back
         return (lon, lat)
 
     @staticmethod
-    def calculate_bbox(geojson_data):
+    def calculate_bbox(geojson_data: dict) -> tuple[float, float, float, float]:
         min_lon = min_lat = float("inf")
         max_lon = max_lat = float("-inf")
 
