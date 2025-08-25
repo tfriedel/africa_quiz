@@ -16,6 +16,101 @@
       ]
     },
     {
+      "moduleId": "tests/test_integration.py",
+      "tests": [
+        {
+          "name": "test_africa_quiz_app_can_be_created",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_can_be_created",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_has_canvas",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_has_canvas",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_can_draw_map",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_can_draw_map",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_handles_click",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_handles_click",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_populates_canvas_geometries",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_populates_canvas_geometries",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_draws_country_polygons",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_draws_country_polygons",
+          "state": "passed"
+        },
+        {
+          "name": "test_main_function_creates_app",
+          "fullName": "tests/test_integration.py::test_main_function_creates_app",
+          "state": "passed"
+        },
+        {
+          "name": "test_main_function_actually_works",
+          "fullName": "tests/test_integration.py::test_main_function_actually_works",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_canvas_is_packed",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_canvas_is_packed",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_binds_click_events",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_binds_click_events",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_shows_country_prompt",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_shows_country_prompt",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_updates_prompt_after_click",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_updates_prompt_after_click",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_progresses_to_next_country",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_progresses_to_next_country",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_resets_round_when_complete",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_resets_round_when_complete",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_labels_colored_countries",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_labels_colored_countries",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_shows_round_completion_message",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_shows_round_completion_message",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_uses_proper_aspect_ratio",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_uses_proper_aspect_ratio",
+          "state": "passed"
+        },
+        {
+          "name": "test_africa_quiz_app_handles_click_with_quiz_logic",
+          "fullName": "tests/test_integration.py::test_africa_quiz_app_handles_click_with_quiz_logic",
+          "state": "passed"
+        }
+      ]
+    },
+    {
       "moduleId": "tests/test_projection.py",
       "tests": [
         {
