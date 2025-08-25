@@ -1,0 +1,94 @@
+{
+  "testModules": [
+    {
+      "moduleId": "tests/test_hello.py",
+      "tests": [
+        {
+          "name": "test_hello",
+          "fullName": "tests/test_hello.py::test_hello",
+          "state": "passed"
+        },
+        {
+          "name": "test_hello_return_type",
+          "fullName": "tests/test_hello.py::test_hello_return_type",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "tests/test_projection.py",
+      "tests": [
+        {
+          "name": "test_coordinate_projector_can_be_created",
+          "fullName": "tests/test_projection.py::test_coordinate_projector_can_be_created",
+          "state": "passed"
+        },
+        {
+          "name": "test_coordinate_projector_converts_geo_to_canvas",
+          "fullName": "tests/test_projection.py::test_coordinate_projector_converts_geo_to_canvas",
+          "state": "passed"
+        },
+        {
+          "name": "test_calculate_bbox_from_africa_geojson",
+          "fullName": "tests/test_projection.py::test_calculate_bbox_from_africa_geojson",
+          "state": "passed"
+        },
+        {
+          "name": "test_calculate_bbox_with_simple_geojson",
+          "fullName": "tests/test_projection.py::test_calculate_bbox_with_simple_geojson",
+          "state": "passed"
+        },
+        {
+          "name": "test_calculate_bbox_with_multipolygon",
+          "fullName": "tests/test_projection.py::test_calculate_bbox_with_multipolygon",
+          "state": "passed"
+        },
+        {
+          "name": "test_coordinate_projector_reverse_conversion",
+          "fullName": "tests/test_projection.py::test_coordinate_projector_reverse_conversion",
+          "state": "passed"
+        }
+      ]
+    },
+    {
+      "moduleId": "tests/test_quiz.py",
+      "tests": [
+        {
+          "name": "test_quiz_manager_can_be_created",
+          "fullName": "tests/test_quiz.py::test_quiz_manager_can_be_created",
+          "state": "passed"
+        },
+        {
+          "name": "test_quiz_manager_loads_countries_and_provides_current",
+          "fullName": "tests/test_quiz.py::test_quiz_manager_loads_countries_and_provides_current",
+          "state": "passed"
+        },
+        {
+          "name": "test_quiz_manager_loads_actual_african_countries",
+          "fullName": "tests/test_quiz.py::test_quiz_manager_loads_actual_african_countries",
+          "state": "passed"
+        },
+        {
+          "name": "test_quiz_manager_handles_click",
+          "fullName": "tests/test_quiz.py::test_quiz_manager_handles_click",
+          "state": "passed"
+        },
+        {
+          "name": "test_quiz_manager_hit_detection_with_centroids",
+          "fullName": "tests/test_quiz.py::test_quiz_manager_hit_detection_with_centroids",
+          "state": "passed"
+        },
+        {
+          "name": "test_quiz_manager_detects_multiple_countries",
+          "fullName": "tests/test_quiz.py::test_quiz_manager_detects_multiple_countries",
+          "state": "passed"
+        },
+        {
+          "name": "test_quiz_manager_round_completion",
+          "fullName": "tests/test_quiz.py::test_quiz_manager_round_completion",
+          "state": "passed"
+        }
+      ]
+    }
+  ]
+}

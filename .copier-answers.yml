@@ -1,0 +1,10 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v1.0.4
+_src_path: gh:mjun0812/python-copier-template
+author_email: thomas.friedel@gmail.com
+author_name: Thomas Friedel
+description: App shows random name of an African country, user must click on map of
+    Africa and guess where it is.
+package_name: africa_quiz
+project_name: africa_quiz
+python_version: '3.12'
